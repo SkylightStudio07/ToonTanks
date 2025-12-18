@@ -25,12 +25,10 @@ public:
 	UPROPERTY(VisibleInstanceOnly)
 	int32 VisibleInstanceOnly = 24;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int Speed = 400;
 
 protected:
 	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+
 
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta=(AllowPrivateAccess = "true"))
@@ -45,9 +43,8 @@ private:
 
 public:	
 	// Called every frame
-	virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+
 
 };
